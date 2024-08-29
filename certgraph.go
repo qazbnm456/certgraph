@@ -27,8 +27,7 @@ import (
 
 // version vars
 var (
-	gitDate   = "none"
-	gitHash   = "master"
+	ver       = "0.0.0"
 	certGraph = graph.NewCertGraph()
 )
 
@@ -456,7 +455,7 @@ func generateGraphMetadata() map[string]interface{} {
 
 // returns the version string
 func version() string {
-	return fmt.Sprintf("Git commit: %s [%s]", gitDate, gitHash)
+	return fmt.Sprintf("Version: %s", ver)
 }
 
 // cleanInput attempts to parse the input string as a url to extract the hostname
